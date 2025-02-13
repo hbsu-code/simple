@@ -10,7 +10,7 @@
       <br />
       <div class="">
         Elphinstone College is now a constituent college of Dr. Homi Bhabha
-        State University, Mumbai.
+        State University.
       </div>
       <br />
       <div class=""></div>
