@@ -6,8 +6,6 @@
 
     <!-- Popup (appears above the blurred background) -->
     <div v-if="showPopup" class="popup">
-      <div class="">🚧 Website Under Construction 🚧</div>
-      <br />
       <div class="">
         Elphinstone College is now a constituent college of Dr. Homi Bhabha
         State University.
@@ -35,7 +33,7 @@ onMounted(() => {
     // Redirect user after 3 seconds
     setTimeout(() => {
       window.location.href = "https://hbsu.ac.in/page/341/elphinstone-college"; // Change URL here
-    }, 3000);
+    }, 8000);
   }, 1000);
 });
 </script>
