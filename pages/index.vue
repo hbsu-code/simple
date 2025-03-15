@@ -8,10 +8,13 @@
         <img src="/logo.png" alt="" />
       </div>
       <!-- content -->
-      <div class="" style="font-size: 1.5rem">
-        <span>Elphinstone College (estd. 1856) </span>
+      <div
+        class=""
+        style="font-size: 2rem; font-weight: bold; padding-bottom: 0.5em"
+      >
+        <span>{{ college.tagline }} </span>
         <br />
-        <span>156, Mahatma Gandhi Road, Mantralaya, Fort, Mumbai</span>
+        <span>{{ college.address }} </span>
       </div>
     </div>
     <div :class="{ 'blur-bg': showPopup }" class="container">index page</div>
@@ -51,16 +54,17 @@ let isPaused = ref(false); // Track pause state
 let redirectStopped = ref(false); // Prevent redirection when paused
 
 const startCountdown = () => {
-  intervalId = setInterval(() => {
-    if (countdown.value > 0) {
-      countdown.value -= 1;
-    } else {
-      clearInterval(intervalId);
-      if (!redirectStopped.value) {
-        window.location.href = COLLEGE.link; // Redirect only if not paused
-      }
-    }
-  }, 1000);
+  // intervalId = setInterval(() => {
+  //   if (countdown.value > 0) {
+  //     countdown.value -= 1;
+  //   } else {
+  //     clearInterval(intervalId);
+  //     if (!redirectStopped.value) {
+  //       // Redirect only if not paused
+  //     }
+  //   }
+  // }, 1000);
+  window.location.href = COLLEGE.link;
 };
 
 onMounted(() => {
